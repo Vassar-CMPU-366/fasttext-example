@@ -48,9 +48,9 @@ def execute():
     # Labels are made follwing the format for fasttext input
     for each in labels:
         label_data = getfield(json_pos, each)
-        all_labels.append(('__label__pos %s' % ex) for ex in label_data)
+        all_labels.extend(['__label__pos %s' % ex for ex in label_data])
         label_data = getfield(json_neg, each)
-        all_labels.append(('__label__neg %s' % ex) for ex in label_data)
+        all_labels.extend(['__label__neg %s' % ex for ex in label_data])
 
     # Create a temporary file
     tmp, filename = tempfile.mkstemp()
@@ -62,4 +62,6 @@ def execute():
     # Return temporary filename
     return filename
 
-execute()
+
+if __name__ == '__main__':
+    print(execute())

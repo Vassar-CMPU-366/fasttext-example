@@ -32,9 +32,6 @@ def execute():
     # Create temporary file
     tmp, modelname = tempfile.mkstemp()
 
-    # Close the file
-    tmp.close()
-
     # Use specified classifier with parameters and output model to the name of the temporary file
     if model_type == "supervised":
         classifier = fasttext.supervised(train_file, modelname, epoch=epoch, word_ngrams=ngrams, label_prefix=label_prefix)
@@ -48,4 +45,5 @@ def execute():
     # Return the temporary file name
     return modelname
 
-execute()
+if __name__ == '__main__':
+    print(execute())

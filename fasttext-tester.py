@@ -23,4 +23,5 @@ def execute(self, input):
     result = classifier.test(test_file)
     return vars(result)
 
-execute()
+if __name__ == '__main__':
+    print(execute())
