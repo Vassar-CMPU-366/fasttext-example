@@ -10,8 +10,11 @@ Example command: python3 fasttext-converter-neg-pos.py -p data/positive.json -n 
 
 ## Trainer
 The trainer will take the output file from the Converter as input (-i), and the name of the model (-m) to be used in the training as mandatory parameters.
+
 Options for the model are: supervised, skipgram, and cbow.
+
 Optional parameters also include '--epoch,--ngrams,--label'
+
 [Visit the FastText page for more information on parameters.](https://pypi.python.org/pypi/fasttext)
 
 Example command: python3 fasttext-trainer.py -i tmp/tmp123 -m cbow
