@@ -17,7 +17,7 @@ Optional parameters also include '--epoch,--ngrams,--label'
 
 [Visit the FastText page for more information on parameters.](https://pypi.python.org/pypi/fasttext)
 ```
-Example command: python3 fasttext-trainer.py -i tmp/tmp123 -m cbow
+Example command: python3 fasttext-trainer.py -i tmp/tmp123 -t supervised
 ```
 
 ## Tester
