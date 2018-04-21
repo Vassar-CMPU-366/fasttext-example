@@ -1,6 +1,8 @@
 # FastText Solutions Journalism Example
-This is a quick example of building a model from the Solutions Journalism data using the FastText module.
-This was originally made as a REST-like service using Flask.
+This is a quick example of building a model from the [Solutions Journalism](https://www.solutionsjournalism.org) data using the FastText module.
+This was originally made as a REST-like service using Flask. 
+
+The data we have so far is your starting point (until we get the additional data promised). The fasttext implementation is for reference--you can use it as a basis to build on or use whatever approach you want. Note it is not necessary to create a web service, but it would be nice to do so since the Solutions Journalism people ultimately want that.
 
 ## Converter
 The converter will take JSON input from a positive (-p) and negative file (-n), as well as a comma-separated list of labels (-l) representing the field names in the JSON file.
